@@ -21,6 +21,8 @@ export function mflat<TArray extends unknown[], TDepth extends number = 1>(
       const flatten = mflat(array[i] as TArray, d - 1);
       array.splice(i, 1, ...(flatten as TArray));
       i += flatten.length;
+    } else {
+      i++;
     }
   }
   return array as FlatArray<TArray, TDepth>[];
