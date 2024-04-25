@@ -1,6 +1,6 @@
 # @gigwork/mutable
 
-Mutable array functions. In 90% of time you don't need to mutate array and, frankly, it might be harmful. But there is always those 10% when you might need just that!
+Mutable array functions. In 90% of time you don't need to mutate array and, frankly, it might be harmful. But there is always those 10% when you might need just that! Works just like their immutable counterparts, but itsy bitsy teeny weeny bit faster due to not creating new instances of arrays.
 
 ## Installation
 
