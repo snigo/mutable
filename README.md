@@ -153,7 +153,7 @@ mapped === arr; // => true
 
 #### Note on TypeScript usage
 
-If you're changing type of the elements it's advised to re-assign the result to the original array to keep the type information:
+If you're changing type of the elements it's advised to re-assign the result of `mmap` to keep the type information:
 
 ```typescript
 const arr = [1, 2, 3];
