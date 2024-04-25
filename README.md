@@ -1,2 +1,3 @@
-# mutable
+# @gigwork/mutable
+
 Mutable array functions
