@@ -15,7 +15,7 @@ describe('mfilter function', () => {
     const context = { min: 3 };
     const filtered = mfilter(
       array,
-      function (this: { min: number }, element) {
+      function (element) {
         return element >= this.min;
       },
       context,

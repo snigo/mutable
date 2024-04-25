@@ -2,13 +2,10 @@
  * Flattens all sub-array elements of the provided array
  * up to the specified depth in place
  *
- * @template TArray - The type of the input array
- * @template TDepth - The depth to which the array should be flattened
+ * @param array - The array to be flattened
+ * @param [depth=1] - The depth to which the array should be flattened (default is 1)
  *
- * @param {TArray} array - The array to be flattened
- * @param {TDepth} [depth=1] - The depth to which the array should be flattened (default is 1)
- *
- * @returns {FlatArray<TArray, TDepth>[]} - The flattened array
+ * @returns The flattened array
  */
 export function mflat<TArray extends unknown[], TDepth extends number = 1>(
   array: TArray,
