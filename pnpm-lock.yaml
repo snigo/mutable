@@ -20,6 +20,9 @@ importers:
       eslint:
         specifier: ^9.1.1
         version: 9.1.1
+      glob:
+        specifier: ^10.3.12
+        version: 10.3.12
       husky:
         specifier: ^9.0.11
         version: 9.0.11
@@ -38,6 +41,9 @@ importers:
       tsup:
         specifier: ^8.0.2
         version: 8.0.2(typescript@5.4.5)
+      tsx:
+        specifier: ^4.7.3
+        version: 4.7.3
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -1912,6 +1918,11 @@ packages:
         optional: true
       typescript:
         optional: true
+
+  tsx@4.7.3:
+    resolution: {integrity: sha512-+fQnMqIp/jxZEXLcj6WzYy9FhcS5/Dfk8y4AtzJ6ejKcKqmfTF8Gso/jtrzDggCF2zTU20gJa6n8XqPYwDAUYQ==}
+    engines: {node: '>=18.0.0'}
+    hasBin: true
 
   tty-table@4.2.3:
     resolution: {integrity: sha512-Fs15mu0vGzCrj8fmJNP7Ynxt5J7praPXqFN0leZeZBXJwkMxv9cb2D454k1ltrtUSJbZ4yH4e0CynsHLxmUfFA==}
@@ -4059,6 +4070,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
       - ts-node
+
+  tsx@4.7.3:
+    dependencies:
+      esbuild: 0.19.12
+      get-tsconfig: 4.7.3
+    optionalDependencies:
+      fsevents: 2.3.3
 
   tty-table@4.2.3:
     dependencies:
