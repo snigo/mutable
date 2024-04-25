@@ -11,6 +11,8 @@
     "format": "prettier --write src",
     "lint": "tsc --noEmit && eslint src",
     "lint:fix": "tsc --noEmit && eslint src --fix",
+    "lint:staged": "lint-staged",
+    "prepare": "husky",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "publishConfig": {
@@ -23,6 +25,8 @@
     "@gigwork/eslint-config-service": "^1.0.3",
     "@types/node": "^20.12.7",
     "eslint": "^9.1.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "tslib": "^2.6.2",

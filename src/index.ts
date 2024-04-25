@@ -1,3 +1,3 @@
 export function mutable() {
-  return 'mutable';
+  return 'mutable is not always bad';
 }
